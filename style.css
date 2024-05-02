@@ -24,33 +24,22 @@ h3
 }
 
 #GenderField
-{
-  
-    
+{   
     display: flex;
-    width: 100%;  
-    
-         
+    width: 100%;        
 }
 
 #EmailField
 {
-
     display: flex;
-   
-    width: 100%;  
-    
-          
+    width: 100%;          
 }
 
 #ScheduleField
 {
- 
-    display: flex;
-    
+    display: flex;   
     width: 100%;  
-    align-items: center;
-         
+    align-items: center;      
 }
 
 #NightsField
@@ -58,9 +47,7 @@ h3
  
     
     display: flex;
-    width: 100%;  
-    
-         
+    width: 100%;         
 }
 
 #GuestsField
