@@ -1,91 +1,100 @@
-body 
+.Ground 
 {
-    background-image: url("https://c4.wallpaperflare.com/wallpaper/624/380/1000/life-resort-hotel-resort-hotel-wallpaper-preview.jpg");
+    position: fixed;
+    background-image: linear-gradient(45deg,rgb(41, 152, 255), rgb(0, 255, 166));
+    height:100%;
+    width: 100%;
+
 }
 h3
 {
-    width: 100%;
+    display: flex;
+    width: 100%;  
+    font-size: 30px;
     text-align: center;
-    top: 20px; 
-   
 }
 
 
 #NomeField
 {
-    top: 100px;
-    width: 300px;  
     
-    align-items: center;
+    width: 100%;  
+    display: flex;
+    
 }
 
 #GenderField
 {
   
     
-    top: 150px;
-    width: 300px;  
+    display: flex;
+    width: 100%;  
     
-    align-items: center;      
+         
 }
 
 #EmailField
 {
 
+    display: flex;
+   
+    width: 100%;  
     
-    top: 200px;
-    width: 300px;  
-    
-    align-items: center;      
+          
 }
 
 #ScheduleField
 {
  
+    display: flex;
     
-    top: 250px;
-    width: 350px;  
-    
-    align-items: center;      
+    width: 100%;  
+    align-items: center;
+         
 }
 
 #NightsField
 {
  
     
-    top: 300px;
-    width: 300px;  
+    display: flex;
+    width: 100%;  
     
-    align-items: center;      
+         
 }
 
 #GuestsField
 {
  
     
-    top: 350px;
-    width: 300px;  
+    display: flex;
+    width: 100%;  
     
-    align-items: center;      
+        
 }
 
 #AmountField
 {
  
+    display: flex;
     
-    top: 400px;
-    width: 300px;  
+    width: 100%; 
     
-    align-items: center;      
+         
 }
 #MessageField
 {
  
     
-    top: 450px;
-    width: 350px;  
+    display: flex;
+    width: 100%;  
     
     align-items: center;      
+}
+#Submitbtn
+{
+    width: 150px;
+    color: white;
 }
 label 
 {
@@ -95,27 +104,30 @@ label
 
 .Fieldbox 
 {
-    position: absolute;
-    font-size: 15px;
+
     
+    width: 400px;
+    
+    align-items: left;
     
     display: flex;
-    justify-content: center;
-    top:100px;
-
-   
+    flex-direction: column;
+    row-gap: 5px;
+    justify-content: top;
+    
 }
 
 .MainDiv
 {
-    position: absolute;
     color: white;
     background-color: rgb(40, 40, 40);
-    width: 40%;
-    height: 90%;
+    width: 500px;
+    height: auto;
     border-radius: 10%;
-    
-    
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
     
 }
+
 

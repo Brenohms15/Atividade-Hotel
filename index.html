@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,30 +9,25 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-   
+   <div class="Ground">
     <div class="MainDiv position-absolute start-50 top-50 translate-middle">
 
-    <h3 class=" 
-    position-absolute
-    start-50
+    <h3 class=" Fieldbox
+    start-50 input-group 
     translate-middle-x
     " >Formulário para Reserva de Hotel</h3>
 
-    <div class="
-    start-50
-    translate-middle-x Fieldbox
-    " id="NomeField">
-        <label class="form-label">Nome: </label>
-        <input class="form-control" placeholder="Digite um email válido:">
+    <div class="Fieldbox start-50 input-group 
+    translate-middle-x ">
+    <div class=" input-group-sm " id="NomeField">
+        <label class="form-label" >Nome: </label>
+        <input class="form-control " placeholder="Digite um nome válido:">
 
     </div>
      
 
-    <div class="
-    start-50
-    translate-middle-x Fieldbox
-    " id="GenderField">
-        <label class="form-label">Gênero: </label>
+    <div class="input-group-sm " id="GenderField">
+        <label class="form-label" style="width: 500px">Gênero: </label>
         <select class="form-select">
             <option selected>Escolha um Gênero</option>
             <option>Masculino</option>
@@ -42,20 +37,14 @@
 
     </div>
 
-    <div class="
-    start-50
-    translate-middle-x Fieldbox
-    " id="EmailField">
-        <label class="form-label">Email: </label>
+    <div class="input-group-sm " id="EmailField">
+        <label class="form-label" style="width: 150px">Email: </label>
         <input class="form-control" placeholder="Digite um email válido:">
     
     </div>
 
-    <div class="
-    start-50
-    translate-middle-x Fieldbox
-    " id="ScheduleField">
-        <label class="form-label">Data de chegada: </label>
+    <div class="input-group-sm " id="ScheduleField">
+        <label class="form-label" style="width: 300px">Data de chegada: </label>
         <fieldset>
             <input class="form-control" type="date" name="" value="">
         </fieldset>
@@ -63,45 +52,47 @@
         
     </div>
 
-    <div class="
-    start-50
-    translate-middle-x Fieldbox
-    " id="NightsField">  
+    <div class="input-group-sm " id="NightsField">  
 
-        <label class="form-label">Numero de Noites:</label>
+        <label class="form-label" style="width: 800px">Numero de Noites:</label>
         <input class="form-control" type="number" name="number" min="0" max="100" value="0">
       
     </div>
 
-    <div class="
-    start-50
-    translate-middle-x Fieldbox 
-    " id="GuestsField">  
+    <div class="input-group-sm " id="GuestsField">  
 
-        <label class="form-label">Numero de Hospedes:</label>
+        <label class="form-label"style="width: 800px">Numero de Hospedes:</label>
         <input class="form-control" type="number" name="number" min="0" max="10" value="0">
       
     </div>
 
-    <div class="
-    start-50
-    translate-middle-x Fieldbox 
-    " id="AmountField"> 
+    <div class="input-group-sm " id="AmountField"> 
 
-        <label class="form-label">Total estimado:</label>
+        <label class="form-label"style="width: 700px">Total estimado:</label>
         <input class="form-control" disabled>
 
     </div>
 
-    <div class="
-    start-50 form-floating
-    translate-middle-x Fieldbox 
-    " id="MessageField"> 
+    <div class="input-group-sm " id="MessageField"> 
+    <label class="floatTextarea">Mensagem:</label>
+        <div class="form-floating" style="width: 400px">
+            <textarea class="form-control" id="formtextarea" style="height: 100%;" placeholder="Digite:"></textarea>
+            <label class="form-label " for="formtextarea">Digite:</label>
+        </div>     
+    </div>
 
-        <textarea class="form-control"></textarea>
-        <label class="floatTextarea">Mensagem:</label>
+    <div  id="cb1">
+        <input class="form-check-input" type="checkbox">
+        <label class="form-label">Deseja receber nossa News Letter?</label>
+    </div>
+
+
+    <div>
+        <button type="button" id="Submitbtn" class="btn btn-info btn-lg start-50 translate-middle-x">Enviar</button>
     </div>
 
 </div>
+</div>
+
 </body>
 </html> 
