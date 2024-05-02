@@ -95,6 +95,7 @@ h3
 {
     width: 150px;
     color: white;
+    background-image: linear-gradient(45deg,rgb(41, 152, 255), rgb(0, 255, 166));
 }
 label 
 {
@@ -120,7 +121,7 @@ label
 .MainDiv
 {
     color: white;
-    background-color: rgb(40, 40, 40);
+    background-color: rgb(53, 53, 53);
     width: 500px;
     height: auto;
     border-radius: 10%;
@@ -130,4 +131,7 @@ label
     
 }
 
-
+form
+{
+    width: 100px;
+}
