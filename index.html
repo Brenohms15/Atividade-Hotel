@@ -9,28 +9,29 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+   
+    <div class="MainDiv position-absolute start-50 top-50 translate-middle">
+
     <h3 class=" 
     position-absolute
     start-50
-
     translate-middle-x
-    ">Formulário para Reserva de Hotel</h3>
+    " >Formulário para Reserva de Hotel</h3>
 
     <div class="
     start-50
-    translate-middle NameField
-    ">
-
+    translate-middle-x Fieldbox
+    " id="NomeField">
         <label class="form-label">Nome: </label>
-        <input class="form-control Fieldbox" placeholder="Digite seu Nome">
+        <input class="form-control" placeholder="Digite um email válido:">
 
     </div>
+     
 
     <div class="
     start-50
-    translate-middle GenderField
-    ">
+    translate-middle-x Fieldbox
+    " id="GenderField">
         <label class="form-label">Gênero: </label>
         <select class="form-select">
             <option selected>Escolha um Gênero</option>
@@ -43,25 +44,64 @@
 
     <div class="
     start-50
-    translate-middle EmailField
-    ">
+    translate-middle-x Fieldbox
+    " id="EmailField">
         <label class="form-label">Email: </label>
         <input class="form-control" placeholder="Digite um email válido:">
-
+    
     </div>
 
     <div class="
     start-50
-    translate-middle ScheduleField
-    ">
+    translate-middle-x Fieldbox
+    " id="ScheduleField">
         <label class="form-label">Data de chegada: </label>
-        <div class="form-group">
-            <input class="form-control">
-            <span class="glyphicon glyphicon-calendar"></span>
-        </div>
+        <fieldset>
+            <input class="form-control" type="date" name="" value="">
+        </fieldset>
+         
         
     </div>
-    
 
+    <div class="
+    start-50
+    translate-middle-x Fieldbox
+    " id="NightsField">  
+
+        <label class="form-label">Numero de Noites:</label>
+        <input class="form-control" type="number" name="number" min="0" max="100" value="0">
+      
+    </div>
+
+    <div class="
+    start-50
+    translate-middle-x Fieldbox 
+    " id="GuestsField">  
+
+        <label class="form-label">Numero de Hospedes:</label>
+        <input class="form-control" type="number" name="number" min="0" max="10" value="0">
+      
+    </div>
+
+    <div class="
+    start-50
+    translate-middle-x Fieldbox 
+    " id="AmountField"> 
+
+        <label class="form-label">Total estimado:</label>
+        <input class="form-control" disabled>
+
+    </div>
+
+    <div class="
+    start-50 form-floating
+    translate-middle-x Fieldbox 
+    " id="MessageField"> 
+
+        <textarea class="form-control"></textarea>
+        <label class="floatTextarea">Mensagem:</label>
+    </div>
+
+</div>
 </body>
-</html>
+</html> 

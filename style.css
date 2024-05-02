@@ -1,50 +1,92 @@
 body 
 {
+    background-image: url("https://c4.wallpaperflare.com/wallpaper/624/380/1000/life-resort-hotel-resort-hotel-wallpaper-preview.jpg");
+}
+h3
+{
     width: 100%;
-    height: 640px;
-    background-color: white;
+    text-align: center;
+    top: 20px; 
+   
 }
 
-.NameField
+
+#NomeField
 {
-    color: black;
-    position: absolute;
     top: 100px;
     width: 300px;  
-    display: flex;
-    align-items: center;      
+    
+    align-items: center;
 }
 
-.GenderField
+#GenderField
 {
-    color: black;
-    position: absolute;
+  
+    
     top: 150px;
     width: 300px;  
-    display: flex;
+    
     align-items: center;      
 }
 
-.EmailField
+#EmailField
 {
-    color: black;
-    position: absolute;
+
+    
     top: 200px;
     width: 300px;  
-    display: flex;
+    
     align-items: center;      
 }
 
-.ScheduleField
+#ScheduleField
 {
-    color: black;
-    position: absolute;
+ 
+    
     top: 250px;
     width: 350px;  
-    display: flex;
+    
     align-items: center;      
 }
 
+#NightsField
+{
+ 
+    
+    top: 300px;
+    width: 300px;  
+    
+    align-items: center;      
+}
+
+#GuestsField
+{
+ 
+    
+    top: 350px;
+    width: 300px;  
+    
+    align-items: center;      
+}
+
+#AmountField
+{
+ 
+    
+    top: 400px;
+    width: 300px;  
+    
+    align-items: center;      
+}
+#MessageField
+{
+ 
+    
+    top: 450px;
+    width: 350px;  
+    
+    align-items: center;      
+}
 label 
 {
     font-weight: bold;
@@ -53,13 +95,27 @@ label
 
 .Fieldbox 
 {
-    
+    position: absolute;
     font-size: 15px;
-    width: auto; 
-    flex-grow: 1; 
+    
+    
+    display: flex;
+    justify-content: center;
+    top:100px;
+
+   
 }
 
-@code {
-    private DateOnly date1 = DateOnly.FromDateTime(DateTime.Now.AddMonths(3));
+.MainDiv
+{
+    position: absolute;
+    color: white;
+    background-color: rgb(40, 40, 40);
+    width: 40%;
+    height: 90%;
+    border-radius: 10%;
+    
+    
+    
 }
 
