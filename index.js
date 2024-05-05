@@ -6,42 +6,96 @@
     let hospedes = document.getElementById("hospedes");
 
     
-    
+
     let verify = [];
     
 function Alterar(valor, cod)
 {
     const current = document.getElementById(cod);
 
-    if(valor.value == "")
-    {    
-        verify.push(current);     
-        current.classList.add("is-invalid");
-        current.classList.remove("is-valid");    
-    }
-    else
-    {   
-        verify.shift(current);    
-        current.classList.add("is-valid");
-        current.classList.remove("is-invalid");    
-    }
+    switch(current)
+        {
+            case nome:
+                if(current.value == "")
+                {
+                    Toggle(nome, "Error");
+                }
+                else
+                {
+                    Toggle(nome, "Correct");
+                }
+            break;
+
+            case email:
+                if(ValidateEmail(valor.value) != true)
+                {
+                    Toggle(email, "Error");
+                }
+                else
+                {
+                    Toggle(email, "Correct");
+                }
+                
+            break;
+
+            case noites:
+
+                if(valor.value < 1)
+                {
+                    Toggle(noites, "Error");
+                }
+                else
+                {
+                    Toggle(noites, "Correct");
+                }
+
+            break;
+
+            case hospedes:
+
+            if(valor.value < 1)
+                {
+                    Toggle(hospedes, "Error");
+                }
+                else
+                {
+                    Toggle(hospedes, "Correct");
+                }
+
+            break;
+        }
     
 }
 function Enviar()
 {  
-    const inputs = document.querySelectorAll("#nome");
-    console.log(inputs.id );
-    for (let x = 0; x < verify.length; x++) 
-    {
-        let errorinput = document.getElementById(verify[x].id);
-        console.log(verify[x].id);  
-             
-        if(inputs.value == "")
+    const inputs = [nome, email, noites, hospedes];
+    
+        for(let x = 0; x < inputs.length; x++)
         {
-            inputs.classList.add("is-invalid");
-            inputs.classList.remove("is-valid");
+            if(inputs[x].value == "" || inputs[x].value < 1)
+            {
+                inputs[x].classList.add("is-invalid");
+            }
         }
-    }
     
   
 }
+function ValidateEmail(email)
+{
+    let emailchars = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+    return emailchars.test(email);
+}
+function Toggle(selfinput, condition)
+{
+    if(condition == "Error")
+    {
+        selfinput.classList.add("is-invalid");
+        selfinput.classList.remove("is-valid");
+    }
+    else if(condition == "Correct")
+    {
+        selfinput.classList.add("is-valid");
+        selfinput.classList.remove("is-invalid");
+    }
+}
+
