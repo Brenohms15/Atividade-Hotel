@@ -27,8 +27,8 @@
 
     <div class="input-group-sm " id="GenderField">
         <label class="form-label" style="width: 500px">Gênero: </label>
-        <select class="form-select">
-            <option selected>Escolha um Gênero</option>
+        <select onchange="Alterar(this,this.id)" class="form-select" id="gender">
+            <option selected id="default">Escolha um Gênero</option>
             <option>Masculino</option>
             <option>Feminino</option>
             <option>Outro</option>
@@ -45,7 +45,7 @@
     <div class="input-group-sm " id="ScheduleField">
         <label class="form-label" style="width: 300px">Data de chegada: </label>
         <fieldset>
-            <input oninput="Alterar(this, this.id)" class="form-control" type="date" name="" value="">
+            <input oninput="Alterar(this, this.id)" class="form-control" id="chegada" type="date" name="" value="" min="">
         </fieldset>
          
         

@@ -1,11 +1,11 @@
-//const fields = document.querySelectorAll("input.form-control");
-
     let nome = document.getElementById("nome");
+    let genero = document.getElementById("gender")
     let email = document.getElementById("email");
+    let chegada = document.getElementById("chegada").min = new Date().toISOString().split("T")[0];
     let noites = document.getElementById("noites");
     let hospedes = document.getElementById("hospedes");
 
-    
+    //chegada.setAttribute("min", new Date());
 
     let verify = [];
 
@@ -27,6 +27,19 @@ function Alterar(valor, cod)
                 {
                     Toggle(nome, "Correct");
                 }
+            break;
+
+            case gender:
+                if(gender.value == document.getElementById("default").value)
+        {
+            gender.classList.add("is-invalid");
+            gender.classList.remove("is-valid");
+        }
+        else
+        {
+            gender.classList.add("is-valid");
+            gender.classList.remove("is-invalid");
+        }
             break;
 
             case email:
@@ -74,7 +87,7 @@ function Alterar(valor, cod)
 //Funcao do botao de enviar
 function Enviar()
 {  
-    const inputs = [nome, email, noites, hospedes];
+        const inputs = [nome, email, noites, hospedes];
     
         for(let x = 0; x < inputs.length; x++)
         {
@@ -84,7 +97,17 @@ function Enviar()
             }
         }
     
-  
+        if(gender.value == document.getElementById("default").value)
+        {
+            gender.classList.add("is-invalid");
+            gender.classList.remove("is-valid");
+        }
+        else
+        {
+            gender.classList.add("is-valid");
+            gender.classList.remove("is-invalid");
+        }
+        
 }
 
 
