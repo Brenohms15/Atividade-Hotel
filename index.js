@@ -8,7 +8,10 @@
     
 
     let verify = [];
+
     
+   
+//Funcao que e ativada a todo momento em que um input e alterado    
 function Alterar(valor, cod)
 {
     const current = document.getElementById(cod);
@@ -66,6 +69,9 @@ function Alterar(valor, cod)
         }
     
 }
+
+
+//Funcao do botao de enviar
 function Enviar()
 {  
     const inputs = [nome, email, noites, hospedes];
@@ -80,11 +86,16 @@ function Enviar()
     
   
 }
+
+
+//Funcao que valida se um email esta da forma correta
 function ValidateEmail(email)
 {
     let emailchars = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
     return emailchars.test(email);
 }
+
+//Funcao que decide se um input esta correto ou errado
 function Toggle(selfinput, condition)
 {
     if(condition == "Error")
